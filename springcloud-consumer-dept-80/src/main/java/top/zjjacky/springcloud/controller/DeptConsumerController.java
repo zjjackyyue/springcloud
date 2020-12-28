@@ -16,7 +16,7 @@ public class DeptConsumerController {
     private RestTemplate restTemplate;
 
     //private static final String REST_URL_PREFIX = "http://localhost:8001";
-    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT ";
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";//访问eureka配置中心里面的application.name
 
     @RequestMapping("/consumer/dept/addition")
     public boolean add(Dept dept) {
