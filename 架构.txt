@@ -1,7 +1,7 @@
 架构
-项目一共由springcloud-api、springcloud-consumer-dept-80、springcloud-eureka7001/7002/7003、springcloud-provider-dept-8001/8002四个部件组成。
+该项目为微服务项目，其中一共由两个服务和一个注册中心构成。它们分别是springcloud-provider-dept-8001/8002和springcloud-eureka-7001/7002/7003。
 
-六个部件各施其职
+两个provider服务
 springcloud-provider-dept-8001/8002
 springcloud-provider-dept-8001/8002是存储数据的部件，它们是两个分开的服务，但是它们的数据库以及数据库中的数据是一样的。它们通过rest api提供对数据增删查改的途径。
 
@@ -13,7 +13,7 @@ springcloud-eureka7001、7002、7003
 注册中心的介绍：
 注册中心是微服务架构的基础部件。服务可以注册到注册中心。服务一旦注册到了注册中心，就可以被其他服务发现。注册中心的职责是管理服务。
 
-在本项目中，springcloud-provider-dept-8001注册到了springcloud-eureka中，因此springcloud-consumer-dept-80可以从注册中心中发现provider服务。
-
 springcloud-consumer-dept-80
-在该项目中，springcloud-consumer-80调用provider提供的api接口。我为consumer配置了ribbon，让consumer在访问provider的时候可以达到达到负载均衡算法实现的效果。
+springcloud-provider-dept-8001注册到了springcloud-eureka中，因此springcloud-consumer-dept-80可以从注册中心中发现provider服务并调用Provider提供的api接口。
+我还为consumer配置了ribbon，让consumer访问provider可以达到负载均衡。
+在ribbon中我配置了一个自定义算法，类名叫ZjjackyRule。
