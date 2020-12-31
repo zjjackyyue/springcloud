@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="MySQL - springcloud_test01@localhost" uuid="3f8a4112-755e-429e-b2c1-e840a8050776">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/springcloud_test01?serverTimezone=GMT&amp;useSSL=false&amp;characterEncoding=utf8</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="MySQL - springcloud_test01@localhost [2]" uuid="23ee695e-1b32-4294-be56-e77271dd7264">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/springcloud_test01_db2?serverTimezone=GMT&amp;useSSL=false&amp;characterEncoding=utf8</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="springcloud_test01@localhost" uuid="83b127f5-9675-4977-90c3-c3a8d33d4e25">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/springcloud_test01?serverTimezone=GMT&amp;useSSL=false&amp;characterEncoding=utf8</jdbc-url>
     </data-source>
   </component>
 </project>
