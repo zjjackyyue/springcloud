@@ -17,19 +17,19 @@
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-CREATE DATABASE 'springcloud_test01_db2';
+CREATE DATABASE springcloud_test01_db2;
 
-USE 'springcloud_test01_db2';
+USE springcloud_test01_db2;
 
 -- ----------------------------
 -- Table structure for dept
 -- ----------------------------
 DROP TABLE IF EXISTS `dept`;
 CREATE TABLE `dept`  (
-  `dnum` bigint(0) NOT NULL AUTO_INCREMENT,
-  `dname` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `db_source` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`dnum`) USING BTREE
+                         `dnum` bigint(0) NOT NULL AUTO_INCREMENT,
+                         `dname` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                         `db_source` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                         PRIMARY KEY (`dnum`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '部门表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
